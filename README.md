@@ -1,12 +1,21 @@
 # sprint3-python-project
 Sprint 3 Python Foundations - Video Game Sales Analysis
 
-readme_text = """
-Video Game Sales Analysis
+# Video Game Sales Analysis
 
-This project analyzes video game sales data using Python fundamentals such as loops, conditionals, lists, dictionaries, and functions to explore trends in the gaming industry.
+An analysis of the top 20 best-selling video games using Python.
 
-Dataset Source: Adapted from VGChartz (public domain estimates)
-"""
+## Project Structure
 
-print(readme_text)
+| File | Task | Topic |
+|---|---|---|
+| `task1_variables.py` | Task 1 | Variables and Arithmetic |
+| `task2_strings.py` | Task 2 | String Processing |
+| `task3_lists.py` | Task 3 | Lists and Tuples |
+| `task4_loops.py` | Task 4 | Loops and Conditionals |
+| `task5_dictionaries.py` | Task 5 | Dictionaries |
+| `task6_functions.py` | Task 6 | Functions |
+
+## Data Source
+
+Adapted from VGChartz public domain estimates.
