@@ -11,7 +11,8 @@ RANK = 0 NAME = 1 PLATFORM = 2 YEAR = 3 GENRE = 4 PUBLISHER = 5 NA_SALES = 6 EU_
 #a) Total global sales by genre
 sales_by_genre = {}
 
-for game in video_game_sales: genre = game[GENRE] sales = game[GLOBAL_SALES]
+for game in video_game_sales: 
+    genre = game[GENRE] sales = game[GLOBAL_SALES]
 
 if genre in sales_by_genre:
     sales_by_genre[genre] += sales
@@ -22,7 +23,8 @@ print(sales_by_genre)
 #b) Count games per publisher
 games_per_publisher = {}
 
-for game in video_game_sales: publisher = game[PUBLISHER]
+for game in video_game_sales: 
+    publisher = game[PUBLISHER]
 
 if publisher in games_per_publisher:
     games_per_publisher[publisher] += 1
