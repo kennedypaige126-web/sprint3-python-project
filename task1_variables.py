@@ -9,12 +9,14 @@ video_game_sales = [ [1, 'Wii Sports', 'Wii', 2006, 'Sports', 'Nintendo', 41.49,
 RANK = 0 NAME = 1 PLATFORM = 2 YEAR = 3 GENRE = 4 PUBLISHER = 5 NA_SALES = 6 EU_SALES = 7 JP_SALES = 8 GLOBAL_SALES = 9
 
 # a) Total number of games
-total_games = len(video_game_sales) print(total_games)
+total_games = len(video_game_sales) 
+print(total_games)
 
 #b) Average global sales across all games
 total_global_sales = 0
 
-for game in video_game_sales: total_global_sales += game[GLOBAL_SALES]
+for game in video_game_sales: 
+  total_global_sales += game[GLOBAL_SALES]
 
 avg_global_sales = total_global_sales / total_games
 
