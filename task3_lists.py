@@ -11,7 +11,8 @@ RANK = 0 NAME = 1 PLATFORM = 2 YEAR = 3 GENRE = 4 PUBLISHER = 5 NA_SALES = 6 EU_
 #a) Create a list of all game names
 game_names = []
 
-for game in video_game_sales: game_names.append(game[NAME])
+for game in video_game_sales: 
+  game_names.append(game[NAME])
 
 print(game_names)
 
@@ -21,8 +22,8 @@ video_game_sales.append( [21, 'Animal Crossing: New Horizons', 'NS', 2020, 'Simu
 print(len(video_game_sales))
 
 #c) Create a tuple with dataset metadata
-A tuple is more appropriate because this information
-should stay constant and not be changed accidentally.
-dataset_info = ( len(video_game_sales), 10, 'Video Game Sales' )
+#A tuple is more appropriate because this information
+#should stay constant and not be changed accidentally.
+dataset_info = (len(video_game_sales), 10, 'Video Game Sales' )
 
 print(dataset_info)
