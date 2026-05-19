@@ -9,7 +9,8 @@ video_game_sales = [ [1, 'Wii Sports', 'Wii', 2006, 'Sports', 'Nintendo', 41.49,
 RANK = 0 NAME = 1 PLATFORM = 2 YEAR = 3 GENRE = 4 PUBLISHER = 5 NA_SALES = 6 EU_SALES = 7 JP_SALES = 8 GLOBAL_SALES = 9
 e
 #a) Function to calculate total regional sales
-def calculate_total_sals(game): return game[NA_SALES] + game[EU_SALES] + game[JP_SALES]
+def calculate_total_sales(game): 
+    return game[NA_SALES] + game[EU_SALES] + game[JP_SALES]
 
 #Test the function
 first_game_total = calculate_total_sales(video_game_sales[0])
@@ -17,7 +18,8 @@ first_game_total = calculate_total_sales(video_game_sales[0])
 print("Total regional sales:", first_game_total)
 
 #b) Function to filter games by genre
-def filter_by_genre(data, genre='Platform'): filtered_games = []
+def filter_by_genre(data, genre='Platform'): 
+    filtered_games = []
 
 for game in data:
     if game[GENRE] == genre:
@@ -33,8 +35,9 @@ print(platform_games)
 sports_games = filter_by_genre(video_game_sales, 'Sports') print("Sports games:") print(sports_games)
 
 #c) Function to create a formatted game summary
-def get_summary(game): return ( f"{game[NAME]} " f"({game[YEAR]}) - " f"{game[GENRE]} - " f"${game[GLOBAL_SALES]}M" )
+def get_summary(game): 
+    return ( f"{game[NAME]} " f"({game[YEAR]}) - " f"{game[GENRE]} - " f"${game[GLOBAL_SALES]}M" )
 
-Print summary for every game
+#Print summary for every game
 for game in video_game_sales: 
     print(get_summary(game))
