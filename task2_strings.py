@@ -20,7 +20,8 @@ print(pokemon_word)
 #b) Clean messy game names
 messy_names = [' Wii Sports ', 'TETRIS', ' mario kart WII']
 
-for name in messy_names: cleaned_name = name.strip().lower() print(cleaned_name)
+for name in messy_names: 
+  cleaned_name = name.strip().lower() print(cleaned_name)
 
 #c) Formatted summary using an f-string
 top_game = video_game_sales[0]
